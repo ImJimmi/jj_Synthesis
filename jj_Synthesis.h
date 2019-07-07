@@ -6,7 +6,7 @@
     version:          0.1.0
     name:             jj_Synthesis
     description:      A simple synthesis module.
-    dependencies:     juce_core, juce_dsp
+    dependencies:     juce_audio_basics, juce_core, juce_dsp
 
     END_JUCE_MODULE_DECLARATION
 *******************************************************************************/
@@ -19,6 +19,7 @@
 #endif
 
 // JUCE includes
+#include <juce_audio_basics/juce_audio_basics.h>
 #include <juce_core/juce_core.h>
 #include <juce_dsp/juce_dsp.h>
 
@@ -27,4 +28,5 @@
 
 #include "Generators/Oscillators/jj_Oscillator.h"
 #include "Generators/Oscillators/jj_Blit.h"
+#include "Generators/Oscillators/jj_BlitSaw.h"
 #include "Generators/Oscillators/jj_Sine.h"
