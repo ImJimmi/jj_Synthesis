@@ -45,11 +45,6 @@ namespace jj
             return incrementAfterReturning ? originalValue : phase;
         }
 
-        float sincM(float x)
-        {
-            return std::sinf(JJ_PI * x) / (M * std::sinf(JJ_PI * x / M));
-        }
-
         //======================================================================
         float P = 0.f;
         int M = 1;
