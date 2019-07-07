@@ -30,4 +30,5 @@
 #include "Generators/Oscillators/jj_Blit.h"
 #include "Generators/Oscillators/jj_BlitBipolar.h"
 #include "Generators/Oscillators/jj_BlitSaw.h"
+#include "Generators/Oscillators/jj_BlitSquare.h"
 #include "Generators/Oscillators/jj_Sine.h"

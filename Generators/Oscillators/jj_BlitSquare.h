@@ -4,17 +4,17 @@
 namespace jj
 {
     //==========================================================================
-    class BlitSaw   :   public Blit
+    class BlitSquare    :   public BlitBipolar
     {
     public:
         //======================================================================
-        BlitSaw() {}
-        ~BlitSaw() {}
+        BlitSquare() {}
+        ~BlitSquare() {}
 
         //======================================================================
         void setFrequency(float newFreq) override
         {
-            Blit::setFrequency(newFreq);
+            BlitBipolar::setFrequency(newFreq);
 
             state = -0.5f * M / P;
             C2 = 1.f / P;
@@ -22,7 +22,7 @@ namespace jj
 
         float getNextSample() override
         {
-            auto sample = Blit::getNextSample();
+            auto sample = BlitBipolar::getNextSample();
             sample += state - C2;
             state = sample * 0.995f;
 
