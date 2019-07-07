@@ -18,7 +18,7 @@ namespace jj
 
         //======================================================================
         /** Resets the phase to 0. */
-        void resetPhase() { phase = 0.f; }
+        virtual void resetPhase() { phase = 0.f; }
 
         /** Increments the phase based on the current frequency and returns the
             new phase value.

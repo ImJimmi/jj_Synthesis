@@ -34,8 +34,6 @@ namespace jj
             return result;
         }
 
-    private:
-        //======================================================================
         float incrementPhase(bool incrementAfterReturning = false) override
         {
             auto originalValue = phase;
@@ -48,6 +46,7 @@ namespace jj
             return incrementAfterReturning ? originalValue : phase;
         }
 
+    protected:
         //======================================================================
         float P = 0.f;
         int M = 1;
