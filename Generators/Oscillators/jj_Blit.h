@@ -28,6 +28,9 @@ namespace jj
             auto result = std::sinf(M * phase) / (M * std::sinf(phase));
             incrementPhase();
 
+            if (std::isnan(result))
+                result = 1.f;
+
             return result;
         }
 
