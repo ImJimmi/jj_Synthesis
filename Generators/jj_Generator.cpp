@@ -7,13 +7,13 @@ namespace jj
         blockSize = bs;
     }
 
-    const float* Generator::getNextBlock()
+    const juce::AudioBuffer<float> Generator::getNextBlock()
     {
-        auto block = new float[blockSize];
+        juce::AudioBuffer<float> buffer(1, blockSize);
 
         for (int i = 0; i < blockSize; i++)
-            block[i] = getNextSample();
+            buffer.getWritePointer(0)[i] = getNextSample();
 
-        return block;
+        return buffer;
     }
 }

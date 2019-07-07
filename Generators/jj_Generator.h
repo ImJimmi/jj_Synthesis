@@ -16,7 +16,7 @@ namespace jj
         virtual void prepare(double newSampleRate, int expectedBlockSize);
 
         /** Render the next block of audio samples. */
-        virtual const float* getNextBlock();
+        virtual const juce::AudioBuffer<float> getNextBlock();
         
         /** Render the next sample. */
         virtual float getNextSample() = 0;
