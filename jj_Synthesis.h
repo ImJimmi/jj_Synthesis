@@ -24,5 +24,7 @@
 
 // jj_Synthesis includes
 #include "Generators/jj_Generator.h"
-#include "Generators/jj_Oscillator.h"
-#include "Generators/jj_Sine.h"
+
+#include "Generators/Oscillators/jj_Oscillator.h"
+#include "Generators/Oscillators/jj_Blit.h"
+#include "Generators/Oscillators/jj_Sine.h"
