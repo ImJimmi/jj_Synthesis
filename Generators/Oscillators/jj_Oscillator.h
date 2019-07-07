@@ -27,22 +27,19 @@ namespace jj
             phase value will be returned, not the new phase value after the
             increment.
          */
-        float incrementPhase(bool incrementAfterReturning = false);
+        virtual float incrementPhase(bool incrementAfterReturning = false);
 
         //======================================================================
         /** Returns the current phase value. */
         float getPhase() { return phase; }
 
-        void setFrequency(float newFreq) { frequency = newFreq; }
+        virtual void setFrequency(float newFreq) { frequency = newFreq; }
         float getFrequency() { return frequency; }
 
     protected:
         //======================================================================
-        float frequency;
-        double sampleRate;
-
-    private:
-        //======================================================================
+        float frequency = 0.f;
+        double sampleRate = 0.0;
         float phase = 0.f;
     };
 }
