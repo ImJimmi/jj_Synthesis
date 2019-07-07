@@ -4,12 +4,12 @@
 namespace jj
 {
     //==========================================================================
-    class BlitBiPolar   :   public Blit
+    class BlitBipolar   :   public Blit
     {
     public:
         //======================================================================
-        BlitBiPolar() {}
-        ~BlitBiPolar() {}
+        BlitBipolar() {}
+        ~BlitBipolar() {}
 
         //======================================================================
         float getNextSample() override
